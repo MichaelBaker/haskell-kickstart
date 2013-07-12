@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+root_directory=$0/../..
+pushd $root_directory > /dev/null
+cabal-dev install
+if test $? = 0
+then
+  ./dist/build/test/test
+fi
+popd > /dev/null
