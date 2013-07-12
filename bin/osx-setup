@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+brew update                   # Make sure you have the latest version of Homebrew
+brew install haskell-platform # Install Haskell and libraries
+cabal install cabal-dev       # Cabal dev allows you to package and sandbox Haskell projects
+cabal-dev install             # Install this project
+echo -e "\033[32mFinished \033[0m♬"
