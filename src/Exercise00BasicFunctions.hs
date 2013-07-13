@@ -15,6 +15,10 @@ module Exercise00BasicFunctions where
 --   myFunction s i = True
 --
 -- The line `myFunction :: String -> Int -> Bool` is the function's type signature.
+--
+-- Type signatures have the form `data :: type` which means data is of type type.
+-- For example `5 :: Integer` means 5 is of type Integer.
+--
 -- `String` `Int` and `Bool` are types. `->` is also a type, it is the type of a
 -- function. In a function type signature, the type after the last `->` is the return
 -- type. All of the other types are arguments. In the above example, myFunction
