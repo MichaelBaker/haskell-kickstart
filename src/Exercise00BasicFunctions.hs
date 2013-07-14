@@ -11,10 +11,10 @@ module Exercise00BasicFunctions where
 --
 -- When you look at a function definition, you will often see it written in the form
 --
---   myFunction :: String -> Int -> Bool
+--   myFunction :: String -> Integer -> Bool
 --   myFunction s i = True
 --
--- The line `myFunction :: String -> Int -> Bool` is the function's type signature.
+-- The line `myFunction :: String -> Integer -> Bool` is the function's type signature.
 --
 -- Type signatures have the form `data :: type` which means data is of type type.
 -- For example `5 :: Integer` means 5 is of type Integer.
@@ -22,17 +22,9 @@ module Exercise00BasicFunctions where
 -- `String` `Int` and `Bool` are types. `->` is also a type, it is the type of a
 -- function. In a function type signature, the type after the last `->` is the return
 -- type. All of the other types are arguments. In the above example, myFunction
--- is a function that takes a String and an Int and returns a Bool.
+-- is a function that takes a String and an Integer and returns a Bool.
 --
--- Fix the incorrect type signatures of the following functions.
-
-half :: Integer -> String
-half x = x / 2.0
-
-cube :: Float
-cube x = x * x * x
-
--- Now add type signatures to the following functions
+-- Add type signatures to the following functions
 
 addOne x = x + 1
 concatStrings s1 s2 = s1 ++ s2
